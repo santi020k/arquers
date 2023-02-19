@@ -7,10 +7,6 @@
     },
     "strict": true
   },
-  "include": [
-    "./**/*",
-    "./*",
-    ".eslintrc.js"
-  ],
+  "include": ["./**/*", "./*", ".eslintrc.js"],
   "extends": "expo/tsconfig.base"
 }

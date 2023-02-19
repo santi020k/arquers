@@ -1,6 +1,4 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
-  "eslint.workingDirectories": [
-    ".eslintrc.js",
-  ]
+  "eslint.workingDirectories": [".eslintrc.js"]
 }

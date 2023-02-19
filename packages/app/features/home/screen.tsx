@@ -18,7 +18,7 @@ export function HomeScreen() {
           Native.
         </Text>
         { /* eslint-disable-next-line react-native/no-raw-text */ }
-        <Text>Sólito is made by{ ' ' }
+        <Text> Sólito is made by{ ' ' }
           <A
             href="https://twitter.com/fernandotherojo"
             // @ts-expect-error react-native-web only types
@@ -30,7 +30,8 @@ export function HomeScreen() {
           >
             Fernando Rojo
             { /* eslint-disable-next-line react-native/no-raw-text */ }
-          </A>.
+          </A>
+          .
         </Text>
       </View>
       <View sx={ { height: 32 } } />
@@ -63,15 +64,11 @@ export function HomeScreen() {
             duration: 150,
           } }
         >
-          <Text
-            selectable={ false }
-          >
-            Moti Link
-          </Text>
+          <Text selectable={ false }>Moti Link</Text>
         </MotiLink>
       </Row>
       <Layout>
-        <Text category='h1'>HOME</Text>
+        <Text category="h1">HOME</Text>
       </Layout>
     </View>
   )
