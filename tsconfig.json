@@ -6,5 +6,10 @@
       "app/*": ["./packages/app/*"]
     }
   },
+  "include": [
+    "./**/*",
+    "./*",
+    ".eslintrc.js"
+  ],
   "extends": "expo/tsconfig.base"
 }

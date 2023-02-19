@@ -6,14 +6,26 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@react-native-community/eslint-config": "^3.2.0",
     "@types/react": "^18.0.17",
     "@types/react-native": "^0.69.5",
-    "eslint": "^8.21.0",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "eslint": "7",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "2",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-node": "11",
+    "eslint-plugin-promise": "4",
+    "eslint-plugin-react": "^7.32.2",
     "turbo": "^1.4.2",
     "typescript": "^4.7.4"
   },
   "scripts": {
     "native": "cd apps/expo && expo start",
-    "web": "cd apps/next && yarn next"
+    "web": "cd apps/next && yarn next",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx"
   }
 }
