@@ -1,4 +1,5 @@
-import * as next from 'next'
+/* eslint-disable @typescript-eslint/triple-slash-reference */
+/// <reference types="next" />
 /// <reference types="next/image-types/global" />
 
 // NOTE: This file should not be edited

@@ -1,2 +1,2 @@
-import * as app from 'app/rnw-overrides'
+/* eslint-disable @typescript-eslint/triple-slash-reference */
 /// <reference types="app/rnw-overrides" />

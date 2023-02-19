@@ -33,7 +33,7 @@ module.exports = withPlugins(
     [
       withExpo,
       {
-        projectRoot: path.join(__dirname, '../../..'),
+        projectRoot: path.join(__dirname, '../..'),
       },
     ],
   ],
