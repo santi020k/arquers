@@ -1,5 +1,5 @@
 {
-  "name": "solito-blank",
+  "name": "arquers",
   "private": true,
   "workspaces": [
     "apps/*",

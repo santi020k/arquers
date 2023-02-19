@@ -1,4 +1,5 @@
-import { Text, useSx, View, H1, P, Row, A } from 'dripsy'
+import { useSx, View, H1, P, Row, A } from 'dripsy'
+import { Layout, Text } from '@ui-kitten/components';
 import { TextLink } from 'solito/link'
 import { MotiLink } from 'solito/moti'
 
@@ -64,12 +65,14 @@ export function HomeScreen() {
         >
           <Text
             selectable={false}
-            sx={{ fontSize: 16, color: 'black', fontWeight: 'bold' }}
           >
             Moti Link
           </Text>
         </MotiLink>
       </Row>
+      <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <Text category='h1'>HOME</Text>
+      </Layout>
     </View>
   )
 }

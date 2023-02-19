@@ -1,12 +1,8 @@
+import { FC, ReactElement, useMemo } from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import * as Linking from 'expo-linking'
-import { useMemo } from 'react'
 
-export function NavigationProvider({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export const NavigationProvider: FC<{ children: ReactElement }> = ({ children }) => {
   return (
     <NavigationContainer
       linking={useMemo(

@@ -4,6 +4,9 @@ const withTM = require('next-transpile-modules')([
   'solito',
   'dripsy',
   '@dripsy/core',
+  '@eva-design/eva',
+  '@ui-kitten/components',
+  'react-native-svg',
   'moti',
   'app',
 ])
