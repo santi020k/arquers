@@ -30,10 +30,11 @@
   "scripts": {
     "native": "cd apps/expo && expo start",
     "web": "cd apps/next && yarn next",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint . --fix --cache --max-warnings=0"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "eslint . --fix --cache --max-warnings=0",
+    "*.{js,jsx,ts,tsx}": "yarn run lint",
     "*.{js,css,md, html, json}": "prettier . --write"
   }
 }
