@@ -1,4 +1,4 @@
-/// <reference types="next" />
+import * as next from 'next'
 /// <reference types="next/image-types/global" />
 
 // NOTE: This file should not be edited

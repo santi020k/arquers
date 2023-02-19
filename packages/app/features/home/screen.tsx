@@ -10,15 +10,15 @@ export function HomeScreen() {
     <View
       sx={ { flex: 1, justifyContent: 'center', alignItems: 'center', p: 16 } }
     >
-      <H1 sx={ { fontWeight: '800' } }>Welcome to Solito.</H1>
+      <Text>Welcome to Solito.</Text>
       <View sx={ { maxWidth: 600 } }>
-        <P sx={ { textAlign: 'center' } }>
+        <Text>
           Here is a basic starter to show you how you can navigate from one
           screen to another. This screen uses the same code on Next.js and React
           Native.
-        </P>
-        <P sx={ { textAlign: 'center' } }>
-          Solito is made by{ ' ' }
+        </Text>
+        { /* eslint-disable-next-line react-native/no-raw-text */ }
+        <Text>Sólito is made by{ ' ' }
           <A
             href="https://twitter.com/fernandotherojo"
             // @ts-expect-error react-native-web only types
@@ -29,9 +29,9 @@ export function HomeScreen() {
             sx={ { color: 'blue' } }
           >
             Fernando Rojo
-          </A>
-          .
-        </P>
+            { /* eslint-disable-next-line react-native/no-raw-text */ }
+          </A>.
+        </Text>
       </View>
       <View sx={ { height: 32 } } />
       <Row>
@@ -70,7 +70,7 @@ export function HomeScreen() {
           </Text>
         </MotiLink>
       </Row>
-      <Layout style={ { flex: 1, justifyContent: 'center', alignItems: 'center' } }>
+      <Layout>
         <Text category='h1'>HOME</Text>
       </Layout>
     </View>

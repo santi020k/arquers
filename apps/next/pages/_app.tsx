@@ -8,7 +8,7 @@ const fixReanimatedIssue = () => {
   // FIXME remove this once this reanimated fix gets released
   // https://github.com/software-mansion/react-native-reanimated/issues/3355
   if (process.browser) {
-    // @ts-expect-error
+    // @ts-expect-error Property '_frameTimestamp' does not exist on type 'Window & typeof globalThis'.ts(2339)
     window._frameTimestamp = null
   }
 }
@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }: SolitoAppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Provider>
-        <Component {...pageProps} />
+        <Component { ...pageProps } />
       </Provider>
     </>
   )

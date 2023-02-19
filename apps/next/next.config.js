@@ -1,5 +1,6 @@
 const { withExpo } = require('@expo/next-adapter')
 const withPlugins = require('next-compose-plugins')
+const path = require('path')
 const withTM = require('next-transpile-modules')([
   'solito',
   'dripsy',
@@ -32,7 +33,7 @@ module.exports = withPlugins(
     [
       withExpo,
       {
-        projectRoot: __dirname + '../../..',
+        projectRoot: path.join(__dirname, '../../..'),
       },
     ],
   ],

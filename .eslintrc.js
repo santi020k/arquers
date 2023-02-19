@@ -24,22 +24,22 @@ module.exports = {
     'project': './tsconfig.json' // Required for Standard plugin
   },
   env: {
-    'react-native/react-native': true
+    'react-native/react-native': true,
   },
   rules: {
-    'prettier/prettier': 'off', // Turn off prettier
+    'prettier/prettier': 0, // Turn off prettier
     // Recommended rules
     'react-native/no-unused-styles': 'warn',
     'react-native/no-inline-styles': 'error',
     'react-native/no-raw-text': ['warn', {
-      'skip': ['CustomText']
+      'skip': ['TextLink', 'Link', 'A', 'title']
     }],
     'react-native/no-single-element-style-arrays': 'warn',
     'object-curly-spacing': 'error',
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/strict-boolean-expressions': 'off',
-    '@typescript-eslint/no-floating-promises': 'off',
-    '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/explicit-function-return-type': 0,
+    '@typescript-eslint/strict-boolean-expressions': 0,
+    '@typescript-eslint/no-floating-promises': 0,
+    '@typescript-eslint/no-unused-vars': 0,
     '@typescript-eslint/require-array-sort-compare': ['error', {
       'ignoreStringArrays': true
     }],
@@ -57,6 +57,6 @@ module.exports = {
     'react/jsx-indent': ['error', 2],
     // Indent props with 2 spaces
     'react/jsx-indent-props': ['error', 2],
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": 0
   }
 }
