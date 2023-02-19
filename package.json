@@ -30,23 +30,10 @@
   "scripts": {
     "native": "cd apps/expo && expo start",
     "web": "cd apps/next && yarn next",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "prettier --write",
-      "eslint --fix",
-      "git add"
-    ],
-    "*.{html,css,less,ejs}": [
-      "prettier --write",
-      "git add"
-    ]
+    "*.{js,jsx,ts,tsx}": "eslint . --fix --cache --max-warnings=0",
+    "*.{js,css,md, html, json}": "prettier . --write"
   }
 }

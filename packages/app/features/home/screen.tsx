@@ -10,7 +10,7 @@ export function HomeScreen() {
     <View
       sx={ { flex: 1, justifyContent: 'center', alignItems: 'center', p: 16 } }
     >
-      <Text>Welcome to Solito.</Text>
+      <Text>Welcome to Solito. small change</Text>
       <View sx={ { maxWidth: 600 } }>
         <Text>
           Here is a basic starter to show you how you can navigate from one
