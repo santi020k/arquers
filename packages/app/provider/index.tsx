@@ -7,7 +7,7 @@ export function Provider({ children }: { children: React.ReactNode }) {
   return (
     <KittenProvider>
       <NavigationProvider>
-        <Dripsy>{children}</Dripsy>
+        <Dripsy>{ children }</Dripsy>
       </NavigationProvider>
     </KittenProvider>
   )

@@ -8,14 +8,14 @@ module.exports = {
   extends: [
     'next',
     '@react-native-community/eslint-config', // Default RN config
-    'standard-with-typescript', // Installed in step 2
-    'eslint-config-prettier' // Installed in step 3
+    'standard-with-typescript',
+    'eslint-config-prettier'
   ],
-  parser: '@typescript-eslint/parser', // Installed in step 2
+  parser: '@typescript-eslint/parser',
   plugins: [
-    '@typescript-eslint', // Installed in step 2
-    'react', // Installed in step 1
-    'react-native' // Installed in step 1
+    '@typescript-eslint',
+    'react',
+    'react-native'
   ],
   parserOptions: {
     'ecmaFeatures': {
@@ -28,7 +28,7 @@ module.exports = {
   },
   rules: {
     'prettier/prettier': 'off', // Turn off prettier
-    // These are the rules that I use
+    // Recommended rules
     'react-native/no-unused-styles': 'warn',
     'react-native/no-inline-styles': 'error',
     'react-native/no-raw-text': ['warn', {
@@ -56,6 +56,7 @@ module.exports = {
     // Indent JSX with 2 spaces
     'react/jsx-indent': ['error', 2],
     // Indent props with 2 spaces
-    'react/jsx-indent-props': ['error', 2]
+    'react/jsx-indent-props': ['error', 2],
+    "react/react-in-jsx-scope": "off"
   }
 }

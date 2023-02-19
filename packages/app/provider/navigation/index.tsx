@@ -1,11 +1,11 @@
-import { FC, ReactElement, useMemo } from 'react'
+import { type FC, type ReactElement, useMemo } from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import * as Linking from 'expo-linking'
 
 export const NavigationProvider: FC<{ children: ReactElement }> = ({ children }) => {
   return (
     <NavigationContainer
-      linking={useMemo(
+      linking={ useMemo(
         () => ({
           prefixes: [Linking.createURL('/')],
           config: {
@@ -17,9 +17,9 @@ export const NavigationProvider: FC<{ children: ReactElement }> = ({ children })
           },
         }),
         []
-      )}
+      ) }
     >
-      {children}
+      { children }
     </NavigationContainer>
   )
 }

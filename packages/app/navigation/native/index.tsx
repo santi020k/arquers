@@ -15,17 +15,17 @@ export function NativeNavigation() {
     <Stack.Navigator>
       <Stack.Screen
         name="home"
-        component={HomeScreen}
-        options={{
+        component={ HomeScreen }
+        options={ {
           title: 'Home',
-        }}
+        } }
       />
       <Stack.Screen
         name="user-detail"
-        component={UserDetailScreen}
-        options={{
+        component={ UserDetailScreen }
+        options={ {
           title: 'User',
-        }}
+        } }
       />
     </Stack.Navigator>
   )
