@@ -16,4 +16,7 @@ config.resolver.nodeModulesPaths = [
   path.resolve(workspaceRoot, 'node_modules'),
 ]
 
+// Fix firebase 9
+config.resolver.assetExts.push('cjs')
+
 module.exports = config

@@ -27,12 +27,6 @@ module.exports = {
     // Recommended rules
     'react-native/no-unused-styles': 'warn',
     'react-native/no-inline-styles': 'error',
-    'react-native/no-raw-text': [
-      'warn',
-      {
-        skip: ['TextLink', 'Link', 'A', 'title'],
-      },
-    ],
     'react-native/no-single-element-style-arrays': 'warn',
     'object-curly-spacing': 'error',
     '@typescript-eslint/explicit-function-return-type': 0,
@@ -64,5 +58,6 @@ module.exports = {
     'react/jsx-indent-props': ['error', 2],
     'react/react-in-jsx-scope': 0,
     '@typescript-eslint/no-explicit-any': 'error',
+    '@typescript-eslint/triple-slash-reference': 0,
   },
 }

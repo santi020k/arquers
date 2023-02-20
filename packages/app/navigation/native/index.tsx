@@ -1,32 +1,14 @@
+import { useAuthentication } from '../../firebase/utils/hooks/useAuthentication'
+
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
-import { HomeScreen } from '../../features/home/screen'
-import { UserDetailScreen } from '../../features/user/detail-screen'
+import { UserStack } from './userStack'
+import { AuthStack } from './authStack'
 
-const Stack = createNativeStackNavigator<{
-  home: undefined
-  'user-detail': {
-    id: string
-  }
-}>()
+const Stack = createNativeStackNavigator()
 
 export function NativeNavigation() {
-  return (
-    <Stack.Navigator>
-      <Stack.Screen
-        name="home"
-        component={ HomeScreen }
-        options={ {
-          title: 'Home',
-        } }
-      />
-      <Stack.Screen
-        name="user-detail"
-        component={ UserDetailScreen }
-        options={ {
-          title: 'User',
-        } }
-      />
-    </Stack.Navigator>
-  )
+  const { user } = useAuthentication()
+
+  return user ? <UserStack /> : <AuthStack />
 }

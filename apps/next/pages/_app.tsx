@@ -1,3 +1,4 @@
+// Libs:
 import 'raf/polyfill'
 import { Provider } from 'app/provider'
 import Head from 'next/head'
@@ -19,15 +20,13 @@ function MyApp({ Component, pageProps }: SolitoAppProps) {
   return (
     <>
       <Head>
-        <title>Solito Example App</title>
-        <meta
-          name="description"
-          content="Expo + Next.js with Solito. By Fernando Rojo."
-        />
+        <title>Arquers</title>
+        <meta name="description" content="Arquers club App." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <Provider>
-        <Component { ...pageProps } />
+        <Component {...pageProps} />
       </Provider>
     </>
   )

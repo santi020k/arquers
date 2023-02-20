@@ -34,7 +34,7 @@
     "lint": "eslint . --fix --cache --max-warnings=0"
   },
   "lint-staged": {
-    "*.{js,css,md, html, json}": "prettier . --write",
-    "*.{js,jsx,ts,tsx}": "yarn run lint"
+    "*.{js,jsx,ts,tsx}": "yarn run lint",
+    "*.{js,css,md, html, json}": "prettier . --write"
   }
 }

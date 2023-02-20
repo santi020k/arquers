@@ -1,13 +1,37 @@
 {
   "expo": {
-    "name": "solito-blank",
-    "slug": "solito-blank",
+    "name": "arquers",
+    "slug": "arquers",
     "version": "1.0.0",
-    "scheme": "solito-blank",
-    "platforms": ["ios", "android"],
+    "scheme": "arquers",
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "ios": {
-      "bundleIdentifier": "com.solito.blank"
+      "bundleIdentifier": "club.arquers.app",
+    },
+    "android": {
+      "package": "club.arquers.app",
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9ef810db-70ae-4584-af86-2696d223a23f"
+      }
     }
   },
-  "build": { "babel": { "include": ["@ui-kitten/components"] } }
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      }
+    },
+    "babel": {
+      "include": [
+        "@ui-kitten/components"
+      ]
+    }
+  }
 }

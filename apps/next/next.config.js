@@ -7,6 +7,7 @@ const withTM = require('next-transpile-modules')([
   '@dripsy/core',
   '@eva-design/eva',
   '@ui-kitten/components',
+  '@ui-kitten/eva-icons',
   'react-native-svg',
   'moti',
   'app',
